@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>San Valentín</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Kaushan+Script" rel="stylesheet">
+    <style>
+        
+    .contenedor{
+        margin: 0 auto;
+        width: 300px;
+        padding-top: 200px;
+        animation: latidos .5s infinite;
+        transform-origin: center;
+    }
+    .texto{
+        width: 1200px;
+       /* font-family: 'Kaushan Script', cursive;*/
+        font-family: 'Homemade Apple', cursive;
+        font-size: 100px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    /* Animación con keyframe llamada "latidos" */
+    @keyframes latidos {
+        from { transform: none; }
+        50% { transform: scale(1.1); }
+        to { transform: none; }
+    }
+    .heart-shape{ 
+        position: relative; 
+        width: 200px; 
+        height: 200px; 
+        -webkit-transform: rotate(45deg); 
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg); 
+        -o-transform: rotate(45deg); 
+        transform: rotate(45deg); 
+        background-color: rgb(213, 68, 36);
+    
+    } 
+    .heart-shape:before, .heart-shape:after{ 
+        position: absolute; 
+        width: 200px; 
+        height: 200px; 
+        content: ''; 
+        -webkit-border-radius: 50%; 
+        -moz-border-radius: 50%; 
+        -o-border-radius: 50%; 
+        border-radius: 50%; 
+        background-color: rgb(213, 68, 36);
+    } 
+    .heart-shape:before{
+        bottom: 0px; left: -100px; 
+    } 
+    .heart-shape:after{ 
+            top: -100px; right: 0px; 
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">    
+        <div class="heart-shape"></div>
+    </div>
+   <center><p class="texto">Feliz &nbsp; San Valentín</p></center>
+    
+       
+ 
+
+</body>
+</html>
