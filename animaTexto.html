@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+        body {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 44px;
+            margin: 0 auto;
+            text-align: center;
+            background: #ccc;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#shake").hide();
+            $("#tada").hide();
+            $("#rubber").hide();
+
+            $("#mostrarShake").click(function () {
+                $("#shake").fadeToggle("slow");
+            });
+            $("#mostrarTada").click(function () {
+                $("#tada").fadeToggle("slow");
+            });
+            $("#mostrarRubber").click(function () {
+                $("#rubber").fadeToggle("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div style="font-size: 50divx"> Uso de la librería CSS animate</div>
+    <input type="button" id="mostrarShake" value="Shake" />
+    <input type="button" id="mostrarTada" value="Tada" />
+    <input type="button" id="mostrarRubber" value="Rubber" />
+    <p class="animated infinite shake" id="shake">Animación shake</p>
+    <p class="animated infinite tada" id="tada">Animación tada</p>
+    <p class="animated infinite rubberBand" id="rubber">Animación rubberBand</p>
+
+</body>
+
+</html>
